@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  style="background-color:  #879ed5 ;">
 <head>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
@@ -22,30 +22,20 @@ h1: {
 		String result = (String) request.getAttribute("result");
 	%>
 
-	<h1 style="text-align: center;">Bienvenue sur le calculateur des
-		mensualités</h1>
+	<h1 style="text-align: center;top:15%;position: absolute;left:32%;font-size:30px;"><b>Bienvenue sur le calculateur des
+		mensualités</b></h1>
 
 	<form method="post" action="calculate">
 
-		<div style="display:inline-block;background-color:gray;" id="form">
+		<div style="display:inline-block;top:30%;left:35%;position:absolute;" id="form">
 
-		<input style="width:500px;" name="amount" class="input is-rounded" type="text" placeholder="Rounded input"><br/><br/>
-		<input style="width:500px;" name="taux" class="input is-rounded" type="text" placeholder="Rounded input"><br/><br/>
-		<input style="width:500px;" name="duration" class="input is-rounded" type="text" placeholder="Rounded input"><br/><br/>
-		<input style="width:200px;" class="input is-rounded" type="submit" placeholder="Rounded input"><br/>
+		<input style="width:500px;" name="amount" class="input is-rounded" type="text" placeholder="Le montant du crédit"><br/><br/>
+		<input style="width:500px;" name="taux" class="input is-rounded" type="text" placeholder="Le taix appliqué"><br/><br/>
+		<input style="width:500px;" name="duration" class="input is-rounded" type="text" placeholder="La durée"><br/><br/>
+		<input style="width:200px;left:30%;" class="input is-rounded" type="submit" placeholder="Rounded input"><br/>
 		</div>
 	</form>
-	<p>
-		<c:choose>
-			<c:when test="${result!=null}">
-        	Le résultat est: ${result}
-    		</c:when>
-			<c:otherwise>
-
-			</c:otherwise>
-		</c:choose>
-
-	</p>
+	
 
 </body>
 </html>
