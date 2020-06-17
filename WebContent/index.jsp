@@ -11,13 +11,13 @@
 	<form method="post" action="/calculate">
 	
 		<label id="label-1">Montant:</label>
-		<input type="number" placeholder="Le montant du crédit">
+		<input type="text" name="amount" placeholder="Le montant du crédit">
 		<label id="label-1">Taux:</label>
-		<input type="number" placeholder="Le taux appliqué">
+		<input type="text" name="taux" placeholder="Le taux appliqué">
 		<label id="label-1">Durée:</label>
-		<input type="number" placeholder="L durée du remboursement souhaitée">
+		<input type="text" name="duration" placeholder="L durée du remboursement souhaitée">
 		
-		<input type="submit" value="Calculer" id="button-1"/>
+		<input type="submit" name="send" value="Calculer" id="button-1"/>
 	</form>
 
 </body>
