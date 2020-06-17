@@ -7,9 +7,9 @@ public class CalculateMensualiteImpl implements CalculateurMensualite {
 		double numenateur;
 		double denominateur;
 		double t = rate/100;
-		numenateur = amount * (t/12);
-		denominateur = Math.pow((1 -(1 + (t/12))),(-duration)); 
-		return Math.round(numenateur/denominateur);
+		numenateur = amount*t/12;
+		denominateur = 1- Math.pow(((1 + t/12)),(-duration)); 
+		return Math.round(((numenateur/denominateur) * 100 )/100);
 	}
 
 }

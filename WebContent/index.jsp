@@ -2,9 +2,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Monthly bank payement calculator </title>
 </head>
 <body>
+
+<%
+	String result  = (String)request.getAttribute("result");
+%>
 
 	<h1> Bienvenue sur le calculateur des mensualités </h1>
 	
@@ -19,8 +23,18 @@
 		
 		<input type="submit" name="send" value="Calculer" id="button-1"/>
 	</form>
-	
-	<p> Result is : {result} </p>
+	  <p>
+	  <c:choose>
+    <c:when test="${result!=null}">
+        Le résultat est: ${result}
+    </c:when>    
+    <c:otherwise>
+         
+        <br />
+    </c:otherwise>
+</c:choose>
+		
+	</p>
 
 </body>
 </html>

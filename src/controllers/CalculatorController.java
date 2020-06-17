@@ -31,7 +31,7 @@ public class CalculatorController extends HttpServlet {
 		int duration =  Integer.valueOf(durationTmp);
 		
 		double result = cmi.Calculate(amount, taux, duration);
-		
+		System.out.println("le résultat: "+result);
 		request.setAttribute("result", String.valueOf(result));
         request.getRequestDispatcher("/index.jsp").forward(request, response);
 		
