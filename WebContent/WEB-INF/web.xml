@@ -10,7 +10,6 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <display-name>Banque</display-name>
   <servlet>
   	<servlet-name>calculator</servlet-name>
   	<servlet-class>controllers.CalculatorController</servlet-class>

@@ -8,7 +8,7 @@
 
 	<h1> Bienvenue sur le calculateur des mensualités </h1>
 	
-	<form method="post" action="/calculate">
+	<form method="post" action="calculate">
 	
 		<label id="label-1">Montant:</label>
 		<input type="text" name="amount" placeholder="Le montant du crédit">
@@ -19,6 +19,8 @@
 		
 		<input type="submit" name="send" value="Calculer" id="button-1"/>
 	</form>
+	
+	<p> Result is : {result} </p>
 
 </body>
 </html>
